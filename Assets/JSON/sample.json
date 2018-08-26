@@ -1,0 +1,195 @@
+{
+	"responseCode":"1",
+	"responseMessage":"Successfull",
+	"responselabel": [
+	    {
+	      "name": "Test1",
+	      "money": "1",
+	      "type": "Millions",
+	      "properties": "1",
+	      "marriages": "1",
+	      "personalstaf": "1",
+	      "lackofsense": "1"
+	    },
+	    {
+	      "name": "Test 2",
+	      "money": "2",
+	      "type": "Millions",
+	      "properties": "2",
+	      "marriages": "2",
+	      "personalstaf": "2",
+	      "lackofsense": "2"
+	    },
+	    {
+	      "name": "Test 3",
+	      "money": "3",
+	      "type": "Millions",
+	      "properties": "3",
+	      "marriages": "3",
+	      "personalstaf": "3",
+	      "lackofsense": "3"
+	    },
+	    {
+	      "name": "Test 3",
+	      "money": "3",
+	      "type": "Millions",
+	      "properties": "3",
+	      "marriages": "3",
+	      "personalstaf": "3",
+	      "lackofsense": "3"
+	    },
+	    {
+	      "name": "Test 4",
+	      "money": "4",
+	      "type": "Millions",
+	      "properties": "4",
+	      "marriages": "4",
+	      "personalstaf": "4",
+	      "lackofsense": "4"
+	    },
+	    {
+	      "name": "Test 5",
+	      "money": "5",
+	      "type": "Millions",
+	      "properties": "5",
+	      "marriages": "5",
+	      "personalstaf": "5",
+	      "lackofsense": "5"
+	    },
+	    {
+	      "name": "Test 6",
+	      "money": "6",
+	      "type": "Millions",
+	      "properties": "6",
+	      "marriages": "6",
+	      "personalstaf": "6",
+	      "lackofsense": "6"
+	    },
+	    {
+	      "name": "Test 7",
+	      "money": "7",
+	      "type": "Millions",
+	      "properties": "7",
+	      "marriages": "7",
+	      "personalstaf": "7",
+	      "lackofsense": "7"
+	    },
+	    {
+	      "name": "Test 8",
+	      "money": "8",
+	      "type": "Millions",
+	      "properties": "8",
+	      "marriages": "8",
+	      "personalstaf": "8",
+	      "lackofsense": "8"
+	    },
+	    {
+	      "name": "Test 9",
+	      "money": "9",
+	      "type": "Millions",
+	      "properties": "9",
+	      "marriages": "9",
+	      "personalstaf": "9",
+	      "lackofsense": "9"
+	    },
+	    {
+	      "name": "Test 10",
+	      "money": "10",
+	      "type": "Millions",
+	      "properties": "10",
+	      "marriages": "10",
+	      "personalstaf": "10",
+	      "lackofsense": "10"
+	    },
+	    {
+	      "name": "Test 11",
+	      "money": "11",
+	      "type": "Millions",
+	      "properties": "11",
+	      "marriages": "11",
+	      "personalstaf": "11",
+	      "lackofsense": "11"
+	    },
+	    {
+	      "name": "Test 12",
+	      "money": "12",
+	      "type": "Millions",
+	      "properties": "12",
+	      "marriages": "12",
+	      "personalstaf": "12",
+	      "lackofsense": "12"
+	    },
+	    {
+	      "name": "Test 13",
+	      "money": "13",
+	      "type": "Millions",
+	      "properties": "13",
+	      "marriages": "13",
+	      "personalstaf": "13",
+	      "lackofsense": "13"
+	    },
+	    {
+	      "name": "Test 14",
+	      "money": "14",
+	      "type": "Millions",
+	      "properties": "14",
+	      "marriages": "14",
+	      "personalstaf": "14",
+	      "lackofsense": "14"
+	    },
+	    {
+	      "name": "Test 15",
+	      "money": "25",
+	      "type": "Millions",
+	      "properties": "15",
+	      "marriages": "15",
+	      "personalstaf": "15",
+	      "lackofsense": "15"
+	    },
+	    {
+	      "name": "Test 16",
+	      "money": "16",
+	      "type": "Millions",
+	      "properties": "16",
+	      "marriages": "16",
+	      "personalstaf": "16",
+	      "lackofsense": "16"
+	    },
+	    {
+	      "name": "Test 17",
+	      "money": "17",
+	      "type": "Millions",
+	      "properties": "17",
+	      "marriages": "17",
+	      "personalstaf": "17",
+	      "lackofsense": "17"
+	    },
+	    {
+	      "name": "Test 18",
+	      "money": "18",
+	      "type": "Millions",
+	      "properties": "18",
+	      "marriages": "18",
+	      "personalstaf": "18",
+	      "lackofsense": "18"
+	    },
+	    {
+	      "name": "Test 19",
+	      "money": "19",
+	      "type": "Millions",
+	      "properties": "19",
+	      "marriages": "19",
+	      "personalstaf": "19",
+	      "lackofsense": "19"
+	    },
+	    {
+	      "name": "Test 20",
+	      "money": "20",
+	      "type": "Millions",
+	      "properties": "20",
+	      "marriages": "20",
+	      "personalstaf": "20",
+	      "lackofsense": "20"
+	    }
+	]
+}
