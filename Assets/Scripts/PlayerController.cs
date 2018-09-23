@@ -6,9 +6,16 @@ public class PlayerController : MonoBehaviour {
 
     Player player;
 
-    public GameController gameController;
-	// Use this for initialization
-	void Start () {
+
+    private void Awake()
+    {
+        Debug.Log("Awake for Player Controller called");
+        player = new Player();
+    }
+
+    // Use this for initialization
+    void Start () {
+        Debug.Log("Start for Player Controller called");
         player = new Player();
 	}
 	
@@ -17,8 +24,8 @@ public class PlayerController : MonoBehaviour {
 		
 	}
 
-    public void beginRound(int cardItemIndex) {
-        gameController.gameRound(cardItemIndex);
+    public void BeginRound(int cardItemIndex) {
+        //gameController.gameRound(cardItemIndex);
     }
 
     public Player GetPlayer() {

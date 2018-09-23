@@ -1,17 +1,19 @@
 ﻿<Properties StartupConfiguration="{5A54B674-0EE4-9617-04D3-86E97423CA70}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CardController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
     <Files>
-      <File FileName="Assets/Scripts/CardController.cs" Line="27" Column="41" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="100" Column="9" />
-      <File FileName="Assets/Scripts/Classes/Card.cs" Line="8" Column="23" />
-      <File FileName="Assets/Scripts/Classes/CardItem.cs" Line="8" Column="12" />
-      <File FileName="Assets/Scripts/Classes/Player.cs" Line="24" Column="2" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="21" Column="49" />
+      <File FileName="Assets/Scripts/CardController.cs" Line="23" Column="6" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="120" Column="54" />
+      <File FileName="Assets/Scripts/Classes/Player.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="27" Column="18" />
+      <File FileName="Assets/Scripts/Classes/CardDeck.cs" Line="7" Column="1" />
+      <File FileName="Assets/Scripts/Classes/Card.cs" Line="6" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/swapnilverma/Projects/Unity Projects/toff_trump_multiplayer/Assets/Scripts/GameController.cs" relfile="Assets/Scripts/GameController.cs" line="60" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

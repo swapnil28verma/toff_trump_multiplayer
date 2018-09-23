@@ -1,31 +1,67 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 
 public class GameController : MonoBehaviour
 {
-    List<GameObject> playerList;
+
+    string pathToJson;
+    string jsonString;
+
+
+    public List<GameObject> playerList;
+
     List<Card> playerActiveCards;
+    CardDeck activeDeck;
 
     int winnerIndex = 0;
     // Use this for initialization
     void Start()
     {
+        Debug.Log("Start for Gamecontroller called");
 
         playerActiveCards = new List<Card>();
+
         //Get the JSON data from the json file
         getJsonData();
 
-        //Read and use the JSON data for init
-        parseJsonData();
+        //Distribute cards from deck
+        distributeCards();
+
     }
 
     public void getJsonData() {
-        
+
+        pathToJson = Application.streamingAssetsPath + "/sample.json";
+        jsonString = File.ReadAllText(pathToJson);
+        jsonString = jsonString.Replace("\n", "");
+        jsonString = jsonString.Replace("\t", "");
+        jsonString = jsonString.Replace(" ", "");
+        activeDeck = JsonUtility.FromJson<CardDeck>(jsonString);
     }
 
-    public void parseJsonData() {
-        
+    public void distributeCards() {
+        int playerIndex = 0;
+        PlayerController player;
+
+        foreach (Card card in activeDeck.deck) {
+            player = playerList[playerIndex].GetComponent<PlayerController>();
+            player.GetPlayer().playerDeck.Add(card);
+            playerIndex++;
+            if(playerIndex>3) {
+                playerIndex = 0;
+            }
+        }
+
+        playerIndex = 0;
+        playerActiveCards.RemoveRange(0, playerActiveCards.Count);
+        //Set Active cards for each player
+        for (playerIndex = 0; playerIndex < 4; playerIndex++) {
+            player = playerList[playerIndex].GetComponent<PlayerController>();
+            player.GetPlayer().currentCard = player.GetPlayer().playerDeck[player.GetPlayer().playerDeck.Count-1];
+            playerActiveCards.Add(player.GetPlayer().currentCard);
+        }
     }
 
     /* 
@@ -49,6 +85,7 @@ public class GameController : MonoBehaviour
         {
             //Set isFirstPlayerTimer=true for round winner
             //Reset timer
+            //Change Active cards
             prepNextMove();
         }
 
@@ -79,11 +116,11 @@ public class GameController : MonoBehaviour
 
         foreach(Card card in playerActiveCards) {
 
-            cardItem = card.items[cardItemIndex];
-            if(cardItem.fieldValue > higestValue) {
-                higestValue = cardItem.fieldValue;
-                winnerIndex = index;
-            }
+            //cardItem = card.items[cardItemIndex];
+            //if(cardItem.fieldValue > higestValue) {
+            //    higestValue = cardItem.fieldValue;
+            //    winnerIndex = index;
+            //}
             index++;
         }
     }
@@ -91,13 +128,29 @@ public class GameController : MonoBehaviour
     private void refreshDecksAfterRound()
     {
         foreach(Card card in playerActiveCards){
-            playerList[winnerIndex].GetComponent<PlayerController>().GetPlayer().playerDeck.Add(card);            
+            playerList[winnerIndex].GetComponent<PlayerController>().GetPlayer().playerDeck.Add(card);
         }
 
     }
 
+    public void setActiveCards() {
+
+    }
+
     private void prepNextMove() {
-        
+        int playerIndex = 0;
+        PlayerController player;
+
+
+        playerActiveCards.RemoveRange(0, playerActiveCards.Count);
+        //Set the active cards for all players
+        for (playerIndex = 0; playerIndex < 4; playerIndex++)
+        {
+            player = playerList[playerIndex].GetComponent<PlayerController>();
+            player.GetPlayer().currentCard = player.GetPlayer().playerDeck[player.GetPlayer().playerDeck.Count - 1];
+            playerActiveCards.Add(player.GetPlayer().currentCard);
+        }
+
     }
 
     private bool hasGameEnded()
