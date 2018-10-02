@@ -15,8 +15,6 @@ public class PlayerController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        Debug.Log("Start for Player Controller called");
-        player = new Player();
 	}
 	
 	// Update is called once per frame
@@ -25,7 +23,8 @@ public class PlayerController : MonoBehaviour {
 	}
 
     public void BeginRound(int cardItemIndex) {
-        //gameController.gameRound(cardItemIndex);
+        GameController.gameControllerInstance.gameRound(cardItemIndex);
+        Debug.Log("Round Begun at index !!" + cardItemIndex);
     }
 
     public Player GetPlayer() {
